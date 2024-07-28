@@ -25,8 +25,12 @@
         <!-- navbar -->
         <nav class="col-12 navbar navbar-dark fixed-top navbar-main">
             <div class="container-fluid">
-                <a class="navbar-brand d-flex pt-3" href="#"><img src="assets/img/logo.png" alt="" width="35" height="32" class="d-inline-block align-text-center me-2"><p class="logo-text fs-4">Caro Araya</p></a>
-                <button class="navbar-toggler rounded-0" type="button" data-bs-toggle="offcanvas"
+                <a class="navbar-brand d-flex pt-3" href="#"><img src="assets/img/logo.png" alt="" width="35"
+                        height="32" class="d-inline-block align-text-center me-2">
+                    <p class="logo-text fs-4">Caro Araya</p>
+                </a>
+                <!-- offCanvas -->
+                <!-- <button class="navbar-toggler rounded-0" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -34,23 +38,74 @@
                 <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
                     aria-labelledby="offcanvasDarkNavbarLabel">
                     <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menu</h5>
-                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
-                            aria-label="Close"></button>
+                        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
+                            <h1 class="display-2"><img src="assets/img/arterisco.webp" alt="" width="30" height="30" />
+                            </h1>
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"><i
+                                class="fa-sharp fa-regular fa-xmark text-white fs-2"></i></button>
                     </div>
                     <div class="offcanvas-body">
                         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Sobre mi</a>
+                            <li class="nav-item my-2">
+                                <a class="nav-link active fs-4" aria-current="page" href="#">
+                                    <h1 class="display-1 text-center fw-lighter">* SOBRE MI *</h1>
+                                </a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Proyectos</a>
+                            <li class="nav-item my-2">
+                                <a class="nav-link fs-4" href="#">
+                                    <h1 class="display-1 text-center fw-lighter">* PROYECTOS *</h1>
+                                </a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Tecnologias</a>
+                            <li class="nav-item my-2">
+                                <a class="nav-link fs-4" href="#">
+                                    <h1 class="display-1 text-center fw-lighter">* TECNOLOGIAS *</h1>
+                                </a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Contacto</a>
+                            <li class="nav-item my-2">
+                                <a class="nav-link fs-4" href="#">
+                                    <h1 class="display-1 text-center fw-lighter">* CONTACTO *</h1>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div> -->
+                <!-- offCanvas Top -->
+                <button class="btn btn-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop"
+                    aria-controls="offcanvasTop"><i class="fa-sharp fa-solid fa-bars text-white fs-2"></i></button>
+
+                <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop"
+                    aria-labelledby="offcanvasTopLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasTopLabel">Offcanvas top</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 py-5">
+                            <li class="nav-item my-3">
+                                <a class="nav-link active fs-4" aria-current="page" href="#">
+                                    <h1 class="display-1 text-center fw-lighter">* SOBRE MI *</h1>
+                                </a>
+                            </li>
+                            <li class="nav-item my-2">
+                                <a class="nav-link fs-4" href="#">
+                                    <h1 class="display-1 text-center fw-lighter">* PROYECTOS *</h1>
+                                </a>
+                            </li>
+                            <li class="nav-item my-2">
+                                <a class="nav-link fs-4" href="#">
+                                    <h1 class="display-1 text-center fw-lighter">* TECNOLOGIAS *</h1>
+                                </a>
+                            </li>
+                            <li class="nav-item my-2">
+                                <a class="nav-link fs-4" href="#">
+                                    <h1 class="display-1 text-center fw-lighter">* CONTACTO *</h1>
+                                </a>
+                            </li>
+                            <li class="nav-item my-2">
+                                <a class="nav-link fs-4" href="#">
+                                    <h1 class="text-center"><img src="assets/img/arterisco.webp" alt="" width="40" height="40" /></h1>
+                                </a>
                             </li>
                         </ul>
                     </div>
@@ -71,7 +126,7 @@
         <section class="container-fluid container-about d-flex flex-wrap p-5">
             <div class="about-wrapper col-12 col-md-6">
                 <h1 class="about-title display-1">Hola, soy Caro!</h1>
-                <p class="about-description p-5">
+                <p class="about-description fw-light p-5">
                     Desarrolladora Frontend y titulada en Animación Digital. Con +1 año de experiencia desarrollando
                     HTML, CSS, Javascript, Typescript, React, Vtex IO entre otras.
                     <br />
@@ -119,7 +174,7 @@
                             <h5 class="card-title">Chat Bot</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk
                                 of the card's content.</p>
-                            <a href="#" class="btn btn-card rounded-0">Ver</a>
+                            <a href="#" class="btn btn-card rounded-0 d-flex justify-content-end">Ver</a>
                         </div>
                     </div>
                     <div class="card rounded-0 m-2" style="width: 18rem;">
@@ -182,8 +237,7 @@
             <div class="container container-form col-12">
                 <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label">Nombre</label>
-                    <input type="text" class="form-control" id="exampleFormControlInput1"
-                        placeholder="nombre">
+                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="nombre">
                 </div>
                 <div class="mb-3">
                     <label for="exampleFormControlInput2" class="form-label">Email</label>
@@ -209,7 +263,7 @@
 
             </div>
             <div class="design-by">
-                made with 💜 by caro araya 2023
+                made with 🤍 by caro araya 2024
             </div>
 
         </section>
