@@ -6,8 +6,8 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .navbar-main {
-    background-color: #212529 !important;
-    height: 75px;
+    background-color:#1b1d23 !important;
+    height: 80px;
 }
 .hero-video {
     background-color: #000 !important;
@@ -16,10 +16,6 @@ body {
     background-color: #212529 !important;
   
 }
-/* .container-principal {
-    background-color: #000;
-} */
-
 .container-video {
     position: relative;
     width: 100%; /* Ancho del contenedor */
@@ -33,6 +29,217 @@ body {
     width: 120%; /* Ajustar según la parte del video que quieras mostrar */
     height: auto;
 }
+.container-about {
+    background-color: #DBED64;
+}
+/* about me section */
+.title-aboutme-img {
+    filter: invert(1);
+    width: 100%;
+}
+/* animation text CV*/
+.marquee {
+    position: relative;
+    overflow: hidden;
+    --offset: 20vw;
+    --move-initial: calc(-25% + var(--offset));
+    --move-final: calc(-50% + var(--offset));
+    cursor: pointer;
+    background-color: blue;
+    text-transform: uppercase;
+}
+.marquee:hover{
+    background-color: blue;
+}
+.marquee__inner {
+    width: fit-content;
+    display: flex;
+    position: relative;
+    transform: translate3d(var(--move-initial), 0, 0);
+    animation: marquee 5s linear infinite;
+    animation-play-state: paused;
+}
+
+.marquee span {
+    font-size: 10vw;
+    /* padding: 0 2vw; */
+    font-weight: bolder;
+}
+
+.marquee:hover .marquee__inner {
+    animation-play-state: running;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translate3d(var(--move-initial), 0, 0);
+    }
+
+    100% {
+        transform: translate3d(var(--move-final), 0, 0);
+    }
+}
+/* proyects section */
+.container-proyects{
+    background-color: white;
+    padding: 6vw 0;
+    border-bottom: solid 10px white;
+}
+.proyects-title{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    padding: 3rem 0;
+    font-weight: bolder;
+    margin-bottom: 1em;
+}
+.btn-card {
+    background-color: blue;
+    color: #fff;
+    
+}
+/* technology section*/
+.tecno-container{
+    background-color: white;
+    padding: 6vw 0;
+    border-bottom: solid 10px white;
+}
+.tecno-title{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    padding: 3rem 0;
+    font-weight: bolder;
+    margin-bottom: 1em;
+}
+/* info section */
+.info-container{
+    width: 100%;
+    height: 300px;
+    background-color: white;
+    color: #1b1d23;
+    margin-bottom: 100vh;
+}
+.info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.info > h1 {
+    font-size: 4rem;
+    text-align: center;
+    padding: 0 10px;
+}
+
+@media only screen and (max-width: 960px){
+    .info-container {
+        height: 200px;
+        width: 100%;
+    }
+    .info > h1 {
+        text-align: center;
+        font-size: 2.5rem;
+        padding: 0 20px;
+    }
+    
+}
+
+/* footer */
+.footer-container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: #1b1d23;
+    color: white;
+    padding-top: 140px;
+    position: fixed;
+    z-index: -2;
+    bottom: 0;
+    left: 0;
+ 
+}
+.footer-info {
+    font-size: 1.5rem;
+    /* padding: 30px 0 30px 50px; */
+    width: 70%;
+    margin: 0 auto;
+}
+.footer-info > h1 {
+    padding-bottom: 15px;
+
+}
+.footer-contact{
+    font-size: 1rem;
+    /* padding: 100px 0 30px 50px; */
+    width: 70%;
+    margin: 0 auto;
+}
+/* formulario */
+.container-form {
+    font-size: 1rem;
+    /* padding: 100px 0 30px 50px; */
+    width: 70%;
+    margin: 0 auto;
+}
+
+.footer-sns{
+    width: 70%;
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+}
+.sns-links{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.linkedin, .github, .envelope{
+    color: white;
+    font-size: 35px;
+    margin: 0 auto;
+    padding-bottom: 10px;
+    border-bottom: 4px solid transparent;
+}
+.linkedin:hover, .github:hover, .envelope:hover {
+    border-color: white;
+    transition: all 0.3s ease-in-out;
+
+}
+.design-by {
+    font-size: 0.8rem;
+    color: white;
+    text-align: center;
+}
+
+
+@media only screen and (max-width: 960px){
+    .footer-info {
+        text-align: center;
+        padding: 0;
+        font-size: 20px;
+    }
+    .footer-contact {
+        font-size: 16px;
+        padding: 100px 0 30px 0;
+        text-align: center;
+    }
+    .footer-sns {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .design-by {
+        padding-top: 2em;
+        font-size: 0.8rem;
+        
+    }
+}
+
 /* @media screen and (min-width: 768px){
     .navbar-toggler {
         display: none;

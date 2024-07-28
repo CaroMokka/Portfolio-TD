@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
@@ -22,7 +25,7 @@
         <!-- navbar -->
         <nav class="col-12 navbar navbar-dark fixed-top navbar-main">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Caro Araya</a>
+                <a class="navbar-brand d-flex pt-3" href="#"><img src="assets/img/logo.png" alt="" width="35" height="32" class="d-inline-block align-text-center me-2"><p class="logo-text fs-4">Caro Araya</p></a>
                 <button class="navbar-toggler rounded-0" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
                     aria-label="Toggle navigation">
@@ -38,13 +41,16 @@
                     <div class="offcanvas-body">
                         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">About</a>
+                                <a class="nav-link active" aria-current="page" href="#">Sobre mi</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Proyects</a>
+                                <a class="nav-link" href="#">Proyectos</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Contact</a>
+                                <a class="nav-link" href="#">Tecnologias</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contacto</a>
                             </li>
                         </ul>
                     </div>
@@ -53,19 +59,166 @@
         </nav>
     </header>
     <main>
-        <!-- hero video -->
-        <div class="container-fluid  p-0">
-            <div class="container-video">
+        <!-- section hero video -->
+        <section class="container-fluid p-0">
+            <div class="container-video col-12">
                 <!-- <video src="assets/img/cover-02.mp4" class="object-fit-cover col-12" autoplay></video> -->
                 <!-- <video src="assets/img/cover-02.mp4" class="col-12" autoplay loop muted></video> -->
-                <video src="assets/img/Copia de cover-02.mov" class="col-12" autoplay loop muted></video>
+                <video src="assets/img/cover.mov" class="col-12" autoplay loop muted></video>
+            </div>
+        </section>
+        <!-- section about -->
+        <section class="container-fluid container-about d-flex flex-wrap p-5">
+            <div class="about-wrapper col-12 col-md-6">
+                <h1 class="about-title display-1">Hola, soy Caro!</h1>
+                <p class="about-description p-5">
+                    Desarrolladora Frontend y titulada en Animación Digital. Con +1 año de experiencia desarrollando
+                    HTML, CSS, Javascript, Typescript, React, Vtex IO entre otras.
+                    <br />
+                    Mi travesía en el desarrollo ha sido un viaje de aprendizaje constante, tanto en el ámbito
+                    profesional como personal. Me considero apasionada, perseverante y curiosa. Autodidacta en esencia,
+                    siempre estoy aprendiendo y experimentando cosas nuevas ligadas a la programación, y me esfuerzo por
+                    mantenerme actualizada con las últimas tendencias y mejores prácticas en el mundo del desarrollo.
+                    <br />
+                    Además de mi experiencia técnica, valoro la colaboración y la comunicación efectiva. Creo en la
+                    importancia de trabajar en equipo para alcanzar metas comunes y aprender unos de otros.
+                </p>
+            </div>
+            <div class="about-text d-flex align-items-center col-12 col-md-6">
+                <img class="title-aboutme-img" alt="frontend" src="assets/img/img-about.png" />
+            </div>
+        </section>
+        <section class="container-fluid container-cv"></section>
+        <div class="marquee">
+            <div class="marquee__inner" aria-hidden="true">
+                <span>Curriculum*Vitae*</span>
+                <span>Curriculum*Vitae*</span>
+                <span>Curriculum*Vitae*</span>
+                <span>Curriculum*Vitae*</span>
             </div>
         </div>
+        </section>
+        <section class="container-fluid container-proyects">
+            <div class="wrapper-proyects">
+                <h3 class="proyects-title">Proyectos</h3>
+                <div class="d-flex justify-content-around flex-wrap">
+                    <div class="card rounded-0 m-2" style="width: 18rem;">
+                        <img src="assets/img/card01.png" class="card-img-top rounded-0" style="min-height: 200px;"
+                            alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">API Spotify</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="btn btn-card rounded-0">Ver</a>
+                        </div>
+                    </div>
+                    <div class="card rounded-0 m-2" style="width: 18rem;">
+                        <img src="assets/img/card02.png" class="card-img-top rounded-0" style="min-height: 200px;"
+                            alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Chat Bot</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="btn btn-card rounded-0">Ver</a>
+                        </div>
+                    </div>
+                    <div class="card rounded-0 m-2" style="width: 18rem;">
+                        <img src="assets/img/card03.png" class="card-img-top rounded-0" style="min-height: 200px;"
+                            alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Ecommerce Shop</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="btn btn-card rounded-0">Ver</a>
+                        </div>
+                    </div>
+                    <div class="card rounded-0 m-2" style="width: 18rem;">
+                        <img src="assets/img/card04.png" class="card-img-top rounded-0" style="min-height: 200px;"
+                            alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Games</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="btn btn-card rounded-0">Ver</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- tecnologias -->
+        <section class="tecno-container">
+            <div class="tecno-description">
+                <h3 class="tecno-title">Tecnologías</h3>
+                <div class="d-flex justify-content-around display-2 text-black">
+                    <i class="fa-brands fa-html5"></i>
+                    <i class="fa-brands fa-css3"></i>
+                    <i class="fa-brands fa-js"></i>
+                    <i class="fa-brands fa-bootstrap"></i>
+                    <i class="fa-brands fa-figma"></i>
+                    <i class="fa-brands fa-react"></i>
+                    <i class="fa-brands fa-git-alt"></i>
+                    <!-- <i class="fa-brands fa-python"></i>  -->
+                </div>
+            </div>
+        </section>
+        <section class="info-container">
+            <div class="info">
+                <h1>Trabajemos juntos para crear algo nuevo</h1>
+            </div>
+        </section>
     </main>
-    <footer>
-        <!-- formulario -->
-        <!-- footer -->
+    <!-- footer -->
+    <footer class="footer-container text-uppercase">
+        <section>
+            <div class="footer-info fw-lighter col-12 col-md-6">
+                <h1>Carolina Araya González</h1>
+                <p><i class="fa-solid fa-map-location-dot"></i><span class='mx-4'>Santiago, Chile</span></p>
+            </div>
+            <div class="footer-contact fw-lighter col-12 col-md-6 py-2">
+                <h3>Contáctame</h3>
+                <p>Y pongámonos manos a la obra</p>
+            </div>
+            <!-- formulario -->
+            <div class="container container-form col-12">
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="exampleFormControlInput1"
+                        placeholder="nombre">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput2" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput2"
+                        placeholder="name@example.com">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+            </div>
+        </section>
+        <section class="footer-sns">
+            <div class="sns-links">
+                <a href="https://www.linkedin.com/in/carolina-araya-g/" target="_blank" rel="noreferrer">
+                    <i class="fab fa-linkedin linkedin"></i>
+                </a>
+                <a href="https://github.com/CaroMokka" target="_blank" rel="noreferrer">
+                    <i class="fab fa-github github"></i>
+                </a>
+                <a href="mailto:ci.arayagonzalez@gmail.com?subject=Quiero%20contactarme%20contigo%20Carolina&body=Hola!%20te%20contacto%20desde%20tu%20portafolio.%20Me%20gustaria%20hablar%20sobre%20una%20oportunidad%20de%20proyecto%20y%20saber%20mas%20informacion%20sobre%20ti.%20Quedo%20atento"
+                    target="_blank" rel="noreferrer"><i class="fa-solid fa-envelope envelope"></i></a>
+
+            </div>
+            <div class="design-by">
+                made with 💜 by caro araya 2023
+            </div>
+
+        </section>
+
     </footer>
+
+    <!-- formulario -->
+
+
 
 
     <script src="assets/js/main.js"></script>
